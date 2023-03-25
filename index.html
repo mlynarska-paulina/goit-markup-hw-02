@@ -5,55 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="">Web<span>Studio</span> </a>
+        <a href="index.html" class="logo">Web<span>Studio</span></a>
         <ul>
-          <li><a href="">Agencja</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Kontakt</a></li>
+          <li>
+            <a href="index.html" class="page">Agencja</a>
+          </li>
+          <li>
+            <a href="portfolio.html" class="page">Portfolio</a>
+          </li>
+          <li><a href="#" class="page">Kontakt</a></li>
         </ul>
       </nav>
       <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="contact-primary"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a href="tel:+48111111111" class="contact-primary">+48 111 111 111</a>
+        </li>
       </ul>
     </header>
 
     <main>
-      <section>
-        <h1>Efektywne rozwiązania dla waszego biznesu</h1>
-        <button type="button">Zamów usługe</button>
+      <section class="offer-background">
+        <h1 class="offer">Efektywne rozwiązania dla waszego biznesu</h1>
+        <button type="button" class="offer-button">Zamów usługe</button>
       </section>
 
       <section>
         <ul>
           <li>
-            <h3>Lorem ipsum</h3>
-            <p>
+            <h3 class="list-primary">Lorem ipsum</h3>
+            <p class="description-primary">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h3>Lorem ipsum</h3>
-            <p>
+            <h3 class="list-primary">Lorem ipsum</h3>
+            <p class="description-primary">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h3>Lorem ipsum</h3>
-            <p>
+            <h3 class="list-primary">Lorem ipsum</h3>
+            <p class="description-primary">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h3>Lorem ipsum</h3>
-            <p>
+            <h3 class="list-primary">Lorem ipsum</h3>
+            <p class="description-primary">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
@@ -62,7 +79,7 @@
       </section>
 
       <section>
-        <h2>Czym się zajmujemy</h2>
+        <h2 class="topic">Czym się zajmujemy</h2>
         <ul>
           <li>
             <img
@@ -91,18 +108,18 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Nasz zespół</h2>
+      <section class="people">
+        <h2 class="topic">Nasz zespół</h2>
         <ul>
           <li>
             <img
               src="images/person1.jpg"
-              alt="męzczyzna"
+              alt="mezczyzna"
               width="270"
               height="260"
             />
-            <h3>John Doe</h3>
-            <p>Product designer</p>
+            <h3 class="name">John Doe</h3>
+            <p class="function">Product designer</p>
           </li>
           <li>
             <img
@@ -111,8 +128,8 @@
               width="270"
               height="260"
             />
-            <h3>John Doe</h3>
-            <p>Frontend Developer</p>
+            <h3 class="name">John Doe</h3>
+            <p class="function">Frontend Developer</p>
           </li>
           <li>
             <img
@@ -121,8 +138,8 @@
               width="270"
               height="260"
             />
-            <h3>John Doe</h3>
-            <p>Marketing</p>
+            <h3 class="name">John Doe</h3>
+            <p class="function">Marketing</p>
           </li>
           <li>
             <img
@@ -131,20 +148,28 @@
               width="270"
               height="260"
             />
-            <h3>John Doe</h3>
-            <p>UI Designer</p>
+            <h3 class="name">John Doe</h3>
+            <p class="function">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
-      <a>Web<span>Studio</span></a>
+    <footer class="bottom">
+      <a class="logo">Web<span>Studio</span></a>
       <address>
         <ul>
-          <li>Warszawa, Aleje Jerozolimskie 21</li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+          <li class="place">Warszawa, Aleje Jerozolimskie 21</li>
+          <li>
+            <a href="mailto:info@example.com" class="contact-secondary"
+              >info@example.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+48111111111" class="contact-secondary"
+              >+48 111 111 111</a
+            >
+          </li>
         </ul>
       </address>
     </footer>
