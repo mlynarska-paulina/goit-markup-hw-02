@@ -14,25 +14,40 @@ button {
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
+  letter-spacing: 0.03em;
+}
+:root {
+  --color-active: #2196f3;
+  --logo-color: #2196f3;
+  --logo-color-dark: #000000;
+  --color-dark: #212121;
+  --color-light: #ffffff;
+  --color-light-secondary: #757575;
+  --background-color-light: #f5f4fa;
+  --background-color-dark: #2f303a;
+  --font-primary: "Roboto";
+  --font-secondary: "Raleway";
 }
 .logo {
-  font-family: "Raleway";
+  font-family: var(--font-secondary);
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--logo-color);
 }
-span {
-  color: #000000;
+.logo-word-primary {
+  color: var(--logo-color-dark);
+}
+.logo-word-secondary {
+  color: var(--color-light);
 }
 .page:hover,
-.page:focus {
-  color: #2196f3;
-}
+.page:focus,
 .contact-primary:hover,
-.contact-primary:focus {
-  color: #2196f3;
+.contact-primary:focus,
+.contact-secondary:hover,
+.contact-secondary:focus {
+  color: var(--color-active);
 }
 .page,
 .contact-primary {
@@ -41,74 +56,72 @@ span {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
+.page {
+  color: var(--color-dark);
+}
 .contact-primary {
-  color: #757575;
+  color: var(--color-light-secondary);
 }
 .offer-background {
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
-  background-color: #2f303a;
+  background-color: var(--background-color-dark);
 }
 .offer {
-  position: absolute;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-light);
 }
 .offer-button {
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
-  background: #2196f3;
-  color: #ffffff;
+  background-color: var(--color-active);
+  color: var(--color-light);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
 }
 .button-active:hover,
 .button-active:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--color-active);
+  color: var(--color-light);
 }
 .list-primary {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 p {
-  color: #757575;
+  color: var(--color-light-secondary);
 }
 .description-primary {
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.03em;
+}
+.people {
+  background: var(--background-color-light);
 }
 .topic {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  letter-spacing: 0.03em;
+}
+.card {
+  background: var(--color-light);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .name,
 .function {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .name {
   font-weight: 500;
@@ -122,27 +135,17 @@ p {
 .type-of-the-project {
   font-size: 16px;
   line-height: 30px;
-  letter-spacing: 0.03em;
 }
 .bottom {
-  width: 1600px;
-  height: 252px;
-  top: 1628px;
-  background: #2f303a;
+  background: var(--background-color-dark);
 }
 .place {
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--color-light);
 }
 .contact-secondary {
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-.contact-secondary:hover,
-.contact-secondary:focus {
-  color: #2196f3;
 }
